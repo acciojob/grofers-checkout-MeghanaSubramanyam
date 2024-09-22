@@ -83,9 +83,10 @@
         const table = document.getElementById("groceryTable");
         const totalRow = document.createElement("tr");
 
-        // Create a single cell to display the total price
+        // Create a single cell to display the total price with an ID for testing
         const totalCell = document.createElement("td");
         totalCell.colSpan = 2; // This spans across two columns
+        totalCell.id = "ans";  // Adding ID for testing
         totalCell.textContent = `Total Price: ₹${total}`;
 
         // Add the new cell to the row and append the row to the table
